@@ -1,0 +1,9 @@
+flowchart TD
+    A["Developer / CLI / IDE"] --> B["GitDiffNode"]
+    B --> C["IntentInferenceNode"]
+    C --> D["JavaFileClassifierNode"]
+    D --> E["ContextBuilderNode"]
+    E --> F["ReviewGatewayNode"]
+    F --> G["OutputValidatorNode"]
+    G --> H["ReportGeneratorNode"]
+    H --> I[".review/ai-review.md or IDE output"]
